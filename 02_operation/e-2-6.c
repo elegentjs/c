@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     double w = weight(height);
 
 
-    printf("您的标准体重是：%.1f \n", w);
+    printf("您的标准体重是：%.1f KG\n", w);
 
     
     return 0;

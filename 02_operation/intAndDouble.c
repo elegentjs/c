@@ -8,6 +8,8 @@
  *  45 -> 表示整型常量
  *  45.0 -> double常量
  * 
+ *  这个跟java中是一样的
+ * 
  */
 int main(int argc, char const *argv[])
 {
