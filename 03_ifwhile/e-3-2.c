@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+/**
+ * 在c语言中true: 1; false: 0
+ * 
+ */
 int main(int argc, char const *argv[])
 {
     int i = 1 == 1;
