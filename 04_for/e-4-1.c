@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+/**
+ * 逆序输出正整数
+ * 算法思路：
+ * 
+ *  每次除10取余可以得到个位的数字，然后依次乘十
+ */
 int main(int argc, char const *argv[])
 {
     puts("请输入一个正整数：");
