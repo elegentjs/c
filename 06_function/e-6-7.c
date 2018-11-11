@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+/**
+ * 函数的原型声明
+ *  const可以标识变量在函数中不可更改
+ */
 int minOf(const int[], int);
 
 int main(int argc, char const *argv[])
