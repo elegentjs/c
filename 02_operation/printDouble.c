@@ -6,13 +6,13 @@
  */
 int main(int argc, char const *argv[])
 {
-    float i;
+    double i;
 
     printf ("请输入一个实数：");
 
-    scanf("%f", &i);
+    scanf("%lf", &i);
     
-    printf("您输入了%f \n", i);
+    printf("您输入了%lf \n", i);
 
     return 0;
 }

@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
 
     scanf("%d", &i);
 
-    while(i >= 1) {
+    while(i) {
         printf("%5d", i --);
     }
 

@@ -1,6 +1,10 @@
+
 #include<stdio.h>
 
-
+/**
+ * 
+ * 根据输入的整数打印*号
+ */
 int main(int argc, char const *argv[])
 {
     puts("请输入一个整数：");
