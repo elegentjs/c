@@ -1,49 +1,49 @@
 #include <stdio.h>
-
+#define LENGTH 10
 
 /**
  * 将数组元素调换位置 如[1, 2, 3, 4] -> [4, 3, 2, 1]
- * 
+ * #define LENGTH 10 表示宏定义，在编译之前会进行统一替换
  */
 
-void printArray(int[], int);
+void printArray(int[]);
 
-void reverseArray(int[], int);
+void reverseArray(int[]);
 
 int main(int argc, char const *argv[])
 {
-    puts("请输入整数数组：");
+    printf("请输入整数数组, 数组长度为：%d \n", LENGTH);
 
-    int a[5] = {0};
+    int a[LENGTH] = {0};
 
-    for (int index = 0; index < 5; index ++) {
+    for (int index = 0; index < LENGTH; index ++) {
         printf("a[%d]: ", index);
         scanf("%d", &a[index]);
     }
     
     puts("before reverse : ");
-    printArray(a, 5);
+    printArray(a);
 
-    reverseArray(a, 5);
+    reverseArray(a);
 
     puts("after reverse : ");
-    printArray(a, 5);
+    printArray(a);
 
     return 0;
 }
 
-void printArray(int a[], int length) {
-    for (int index = 0; index < 5; index ++) {
+void printArray(int a[]) {
+    for (int index = 0; index < LENGTH; index ++) {
         printf("a[%d]: %d   ", index, a[index]);
     }
 
     putchar('\n');
 }
 
-void reverseArray(int a[], int length) {
-    for (int index = 0; index < length / 2; index ++) {
+void reverseArray(int a[]) {
+    for (int index = 0; index < LENGTH / 2; index ++) {
         int temp = a[index];
-        a[index] = a[length - index - 1];
-        a[length - index - 1] = temp;
+        a[index] = a[LENGTH - index - 1];
+        a[LENGTH - index - 1] = temp;
     }
 }
