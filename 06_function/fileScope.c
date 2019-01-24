@@ -12,7 +12,7 @@ int array[NUMBER] = {1, 2, 3, 4, 5};
 
 int main(int argc, char const *argv[])
 {
-   // extern int array[];
+    // extern int array[];
     
     for (int index = 0; index < 10; index ++) {
         printf("array[%d] : %d \n", index, array[index]);
