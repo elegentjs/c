@@ -1,20 +1,18 @@
-#include <stdio.h>
+#include "../header.h"
 
 #define NUMBER 10
-#define ERROR -1
 
 /**
  * 顺序查找法
  * 从数组的头开始依次搜索，直到找到目标元素为止
  */
 int search(const int array[], int target);
-void display(int[]);
 
 int main(int argc, char const *argv[])
 {
     int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     puts("数组如下：");
-    display(array);
+    display(array, NUMBER);
 
     puts("请输入要查找的元素：");
     int target;
@@ -41,13 +39,4 @@ int search(const int array[], int target) {
     }
 
     return result;
-}
-
-
-void display(int array[]) {
-    for (int index = 0; index < NUMBER; index ++) {
-        printf("array[%d]:%2d   ", index, array[index]);
-    }
-
-    putchar('\n');
 }

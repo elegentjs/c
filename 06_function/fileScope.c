@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "../header.h"
 
 /**
  * 演示文件作用域效果
@@ -14,9 +14,7 @@ int main(int argc, char const *argv[])
 {
     // extern int array[];
     
-    for (int index = 0; index < 10; index ++) {
-        printf("array[%d] : %d \n", index, array[index]);
-    }
+    display(array, NUMBER);
 
     return 0;
 }

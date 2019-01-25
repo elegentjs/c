@@ -54,3 +54,11 @@ dkms.conf
 
 .vscode/
 .DS_Store
+
+# c compile info
+# 编译中间结果（汇编）
+.s 
+
+# 编译中间结果（obj 文件）
+.o
+

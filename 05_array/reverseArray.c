@@ -1,12 +1,10 @@
-#include <stdio.h>
+#include "../header.h"
 #define LENGTH 10
 
 /**
  * 将数组元素调换位置 如[1, 2, 3, 4] -> [4, 3, 2, 1]
  * #define LENGTH 10 表示宏定义，在编译之前会进行统一替换
  */
-
-void printArray(int[]);
 
 void reverseArray(int[]);
 
@@ -22,22 +20,14 @@ int main(int argc, char const *argv[])
     }
     
     puts("before reverse : ");
-    printArray(a);
+    display(a, LENGTH);
 
     reverseArray(a);
 
     puts("after reverse : ");
-    printArray(a);
+    display(a, LENGTH);
 
     return 0;
-}
-
-void printArray(int a[]) {
-    for (int index = 0; index < LENGTH; index ++) {
-        printf("a[%d]: %d   ", index, a[index]);
-    }
-
-    putchar('\n');
 }
 
 void reverseArray(int a[]) {
