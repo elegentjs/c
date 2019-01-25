@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "../header.h"
 
 void reverseAndCopy(int[], int[], int);
 
@@ -10,9 +10,7 @@ int main(int argc, char const *argv[])
     reverseAndCopy(source, target, 10);
 
     // 打印数组
-    for (int index = 0; index < 10; index ++) {
-        printf("%5d", target[index]);
-    }
+    display(target);
     
     putchar('\n');
 

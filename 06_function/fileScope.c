@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 {
     // extern int array[];
     
-    display(array, NUMBER);
+    display(array);
 
     return 0;
 }
