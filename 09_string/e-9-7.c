@@ -1,15 +1,7 @@
-#include<stdio.h>
-
-unsigned strLen(const char array[]) {
-    unsigned len = 0;
-
-    while(array[len ++]);
-
-    return len;
-}
+#include "../header.h"
 
 void reverseStr(const char array[]) {
-    int arrayLen = strLen(array);
+    int arrayLen = strLength(array);
 
     for (int index = arrayLen - 1; index >= 0; index --) {
         putchar(array[index]);

@@ -1,18 +1,10 @@
-#include<stdio.h>
-
-unsigned strLen(const char array[]) {
-    unsigned len = 0;
-
-    while(array[len ++]);
-
-    return len;
-}
+#include "../header.h"
 
 /**
  *  执行数组反转
  */
 void reverseStr(char array[]) {
-    int arrayLen = strLen(array) - 1;
+    int arrayLen = strLength(array) - 1;
 
     for (int index = 0; index < arrayLen / 2; index ++) {
         int temp = array[index];
