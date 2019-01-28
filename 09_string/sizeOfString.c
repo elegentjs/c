@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "../header.h"
 
 /**
  * 从打印结果可以看出，字符串的长度比实际我们看到的字符个数大1

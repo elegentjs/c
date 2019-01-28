@@ -21,7 +21,10 @@ int arryLen(int* array);
  */
 void display(int array[]);
 
-
+/**
+ * 计算输入的字符串的长度
+ */
+unsigned strLength(const char[]);
 
 
 /* function prototype declaration end */
@@ -50,5 +53,14 @@ void display(int array[]) {
 }
 
 
+/**
+ * 计算输入的字符串的长度
+ */
+unsigned strLength(const char charArray[]) {
+    unsigned length = 0;
 
+    while(charArray[length ++]);
+
+    return length;
+}
 

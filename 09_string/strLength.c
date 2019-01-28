@@ -1,16 +1,4 @@
-#include<stdio.h>
-
-/**
- * 计算输入的字符串的长度
- */
-
-unsigned strLength(const char charArray[]) {
-    unsigned length = 0;
-
-    while(charArray[length ++]);
-
-    return length;
-}
+#include "../header.h"
 
 int main(int argc, char const *argv[])
 {
@@ -19,7 +7,6 @@ int main(int argc, char const *argv[])
     char s[100];
 
     scanf("%s", s);
-
     printf("%s 的长度是： %u. \n", s, strLength(s));
 
     return 0;
