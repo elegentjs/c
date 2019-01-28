@@ -5,7 +5,6 @@
  * 
  */
 
-
 int countBits(unsigned);
 
 void printNumber(unsigned);
