@@ -22,7 +22,7 @@ void printBits(unsigned x);
 
 int main(int argc, char const *argv[])
 {
-    puts("请输入一个正整数：");
+    puts("请输入一个非负整数：");
     
     int no;
 

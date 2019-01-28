@@ -1,7 +1,29 @@
+/* include start */
 #include <stdio.h>
 #include <math.h>
+/* include end */
 
+/* define start */
 #define ERROR -1
+/* define end */
+
+
+/* function prototype declaration start */
+/**
+ *  自动计算数组长度
+ *  原理：使用sizeof
+ */
+int arryLen(int* array);
+
+/**
+ * 数组元素打印
+ * @param array 需要打印的数组
+ */
+void display(int array[]);
+
+
+
+/* function prototype declaration end */
 
 /**
  *  自动计算数组长度
