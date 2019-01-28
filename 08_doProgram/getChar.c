@@ -1,4 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
+
+/**
+ * getchar
+ * 从标准输入流中读取下一个字符
+ * 读取过程中或输入结束时(ctrl + D)，返回EOF
+ * 
+ */
 
 int main(int argc, char const *argv[])
 {
@@ -23,12 +30,13 @@ int main(int argc, char const *argv[])
             case '9': array[9] ++; break;
         }
 
-        puts("字符出现的次数分别为：");
-
-        for (int index = 0; index < 10; index ++) {
-            printf("'%d' : %d \n", index, array[index]);
-        }
     } 
+
+    puts("字符出现的次数分别为：");
+
+    for (int index = 0; index < 10; index ++) {
+        printf("'%d' : %d \n", index, array[index]);
+    }
 
 
     return 0;

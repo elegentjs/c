@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
                 puts("喵喵!");
                 break;   
             case Monkey: 
-                puts("喵喵!");
+                puts("猴子!");
                 break;   
 
             default:

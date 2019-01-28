@@ -1,4 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
+
+/**
+ * 函数式宏，是在编译期间展开并填入程序的，跟宏定义类似
+ * 
+ */
 
 #define diff(x, y) ((x) - (y))
 
