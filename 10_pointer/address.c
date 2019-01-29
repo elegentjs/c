@@ -13,6 +13,7 @@ int main(int argc, char const *argv[])
     printf("z[0] 的地址： %p \n", &z[0]);
     printf("z[1] 的地址： %p \n", &z[1]);
     printf("z[2] 的地址： %p \n", &z[2]);
+    printf("z + 1 的地址： %p \n", &z + 1);
 
     return 0;
 }
