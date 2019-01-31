@@ -3,6 +3,8 @@
 /**
  * 数组与指针
  * 
+ *  不带[]的数组名就表示指向该数组的第一个元素的指针
+ * 
  */
 int main(int argc, char const *argv[])
 {
