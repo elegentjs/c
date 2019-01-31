@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 正数的绝对值是它本身，负数的绝对值是对应的正数

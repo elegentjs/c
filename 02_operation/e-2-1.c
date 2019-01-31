@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 输入两个整数，打印第一数是第二数的百分比，不保留小数点

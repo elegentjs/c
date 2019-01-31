@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 将一个浮点型数据赋值给整型，会丢失精度

@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 输入长方形的长宽，用*打印出来，但中间是空心的

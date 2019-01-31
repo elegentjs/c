@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     reverseAndCopy(source, target, 10);
 
     // 打印数组
-    display(target);
+    display(target, 10);
     
     putchar('\n');
 

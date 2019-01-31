@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 输入两个数，打印第一个数是第二个数的百分比

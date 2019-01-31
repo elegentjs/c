@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  *  输入两个数，判断第二个数是不是第一个数的约数
