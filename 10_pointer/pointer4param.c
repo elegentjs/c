@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 void upperHeight(int *height) {
     if (*height < 180) {

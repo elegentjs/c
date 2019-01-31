@@ -1,8 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc, char const *argv[])
 {
-    
     int x;
     double y;
     int z[3];
