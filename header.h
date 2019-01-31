@@ -43,10 +43,12 @@ void display(int array[], int length) {
 /**
  * 计算输入的字符串的长度
  */
-unsigned strLength(const char charArray[]) {
+unsigned strLength(const char *s) {
     unsigned length = 0;
 
-    while(charArray[length ++]);
+    while(*s ++) {
+        length ++;
+    }
 
     return length;
 }
