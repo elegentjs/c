@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 void str_count(const char str[], int count[]) {
     unsigned i = 0;

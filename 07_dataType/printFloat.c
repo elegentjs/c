@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 以0.01为单位从0.0递增至1.0的循环

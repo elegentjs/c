@@ -3,7 +3,6 @@
 
 /**
  * 展示char, short, int, long的数据范围
- * 
  */
 int main(int argc, char const *argv[])
 {

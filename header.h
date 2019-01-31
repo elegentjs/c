@@ -32,7 +32,6 @@ unsigned strLength(const char[]);
  * @param length 数组长度
  */
 void display(int array[], int length) {
-    int length = arrayLen(array, length);
     for (int index = 0; index < length; index ++) {
         printf("array[%d]: %d ", index, array[index]);
     }

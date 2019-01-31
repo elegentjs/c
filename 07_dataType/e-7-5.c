@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 /**
- * 
  * 本程序演示数据溢出
- * 
- * 
- * 
  */
 int main(int argc, char const *argv[])
 {

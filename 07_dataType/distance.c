@@ -1,10 +1,9 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
 /**
  * 求两点之间的距离
  */
-
 double dist(double x1, double y1, double x2, double y2);
 
 int main(int argc, char const *argv[])

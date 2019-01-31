@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 void put_stringn(const char array[], int no) {
     for (int index = 0; index < no; index ++) {

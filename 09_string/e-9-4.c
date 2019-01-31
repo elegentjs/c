@@ -1,12 +1,4 @@
-#include<stdio.h>
-
-unsigned strLength(const char charArray[]) {
-    unsigned length = 0;
-
-    while(charArray[length ++]);
-
-    return length;
-}
+#include "../header.h"
 
 int str_chnum(const char str[], int c) {
     int count = 0;
