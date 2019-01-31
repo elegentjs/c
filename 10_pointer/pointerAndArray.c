@@ -2,10 +2,11 @@
 
 int main(int argc, char const *argv[])
 {
+    int a = 0;
     int vc[3] = {0};
     int *p = vc;
 
-
+    printf("a       : %p \n", &a);
     printf("vc      : %p \n", vc);
     printf("&vc     : %p \n", &vc);
     printf("&vc[0]  : %p \n", &vc[0]);
