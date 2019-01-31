@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 读取三个整数，计算它们的和并打印它们的值

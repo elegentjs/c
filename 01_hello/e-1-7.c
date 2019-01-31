@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * 从标准输入（keyboard）读取两个整数，并计算和打印它们的乘积

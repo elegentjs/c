@@ -21,12 +21,12 @@ int main(int argc, char const *argv[])
     
     puts("before reverse : ");
     
-    display(a);
+    display(a, LENGTH);
 
     reverseArray(a);
 
     puts("after reverse : ");
-    display(a);
+    display(a, LENGTH);
 
     return 0;
 }
