@@ -11,6 +11,8 @@ int main(int argc, char const *argv[])
     printf("&vc     : %p \n", &vc);
     printf("&vc[0]  : %p \n", &vc[0]);
     printf("p       : %p \n", p);
+    printf("&p       : %p \n", &p);
+
     printf("p + 1   : %p \n", p + 1);
     printf("p + 2   : %p \n", p + 2);
     printf("p + 3   : %p \n", p + 3);
