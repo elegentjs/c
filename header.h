@@ -22,6 +22,10 @@ void display(int array[], int length);
  */
 unsigned strLength(const char[]);
 
+/**
+ * 打印指定整数的二进制字符串
+ */
+char* binaryStr(unsigned int);
 
 /* function prototype declaration end */
 
@@ -51,5 +55,33 @@ unsigned strLength(const char *s) {
     }
 
     return length;
+}
+
+int bitCounts(unsigned int i) {
+    int count = 0;
+
+    while(i) {
+        if (i & 1U) count ++;
+        i >>= 1;
+    }
+
+    return count;
+    
+}
+
+char* binaryStr(unsigned int num) {
+    int intBits = bitCounts(~0U);
+
+    char* result; 
+
+    for (int index = intBits - 1; index >= 0; index --) {
+        *(result + 1) = (num >> index & 1U ? '1' : '0');
+    }
+
+    *(result + 1) = '\0';
+
+    printf("result : %s \n", result);
+
+    return result;
 }
 
