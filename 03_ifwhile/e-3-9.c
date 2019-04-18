@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * 
+ * 判断两个变量是否相等，用==
  */
 int main(int argc, char const *argv[])
 {
