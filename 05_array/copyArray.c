@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 
     int b[9] = {0};
 
-    for (int index = 0; index < arrayLen(b, 9); index ++) {
+    for (int index = 0; index < 9; index ++) {
         b[index] = a[index];
     }
 

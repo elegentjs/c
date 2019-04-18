@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "../header.h"
 
 /**
- *  
+ *  remember: 不可用赋值语句对数组进行初始化
  */
 int main(int argc, char const *argv[])
 {
@@ -10,9 +10,7 @@ int main(int argc, char const *argv[])
     // 不可使用赋值语句对数组进行初始化，只可声明的同时进行初始化
     // a = {1, 2, 3};
 
-    for (int index = 0; index < 10; index ++) {
-        printf("a[%d] : %5d \n", index, a[index]);
-    }
+    display(a, 10);
 
     putchar('\n');
 

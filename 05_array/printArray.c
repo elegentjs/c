@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "../header.h"
 
 /**
  * 依次输入整型数组元素，并打印出来
@@ -13,9 +13,7 @@ int main(int argc, char const *argv[])
         scanf("%d\n", &array[index]);
     }
 
-    for (int i = 0; i < 5; i ++) {
-        printf("array[%d] : %d \n", i, array[i]);
-    }
+    display(array, 5);
 
     return 0;
 }
