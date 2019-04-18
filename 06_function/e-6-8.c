@@ -2,7 +2,7 @@
 
 /**
  * 
- * reverse array
+ * reverse print array
  * 
  */
 
