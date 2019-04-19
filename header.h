@@ -37,7 +37,7 @@ char* binaryStr(unsigned int);
  */
 void display(int array[], int length) {
     for (int index = 0; index < length; index ++) {
-        printf("array[%d]: %d ", index, array[index]);
+        printf("array[%d]: %d; ", index, array[index]);
     }
 
     putchar('\n');
