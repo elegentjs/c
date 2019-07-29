@@ -1,7 +1,7 @@
 #include "../header.h"
 
 char strcopy(char *d, const char *s) {
-    while(*d++ = *s++);
+    while(*(d++) = *(s++));
 }
 
 int main(int argc, char const *argv[])

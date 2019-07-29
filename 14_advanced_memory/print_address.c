@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * 演示C语言各中类型变量（auto, static, malloc）地址打印
+ * 演示C语言各种类型变量（auto, static, malloc）地址打印
  *  同时可以看到引用函数名也可以打印地址
  *      函数名（pointer）就是指向当前函数在内存的地址，函数在编译为机器码后在运行时被加载到内存中的某个区域
  */

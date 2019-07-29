@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-typedef struct student {
-
+typedef struct {
     char *name;
     int height;
     int weight;
