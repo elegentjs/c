@@ -55,8 +55,13 @@ void quickSortInternal(int *data, int start, int end) {
         }
     }
 
-    quickSortInternal(data, start, leftIndex);
-    quickSortInternal(data, rightIndex, end);
+    if (rightIndex > start) {
+        quickSortInternal(data, start, rightIndex);
+    }
+
+    if (leftIndex < end) {
+        quickSortInternal(data, leftIndex, end);
+    }
 
 }
 
