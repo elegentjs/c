@@ -1,7 +1,12 @@
 #include "head.h"
 
 /**
- * 演示线性表（基于顺序存储结构）
+ * 演示线性表（基于顺序存储结构, 即数组）
+ * 
+ * display -> 遍历
+ * add -> 在指定位置添加元素
+ * 
+ * 
  * 
  */
 
@@ -10,12 +15,12 @@ typedef struct {
     int length;
 } ArrayList;
 
-Status get(ArrayList arrayList, int index, int *result) {
-    if (arrayList.length == 0 || index < 0 || index > arrayList.length - 1) {
+Status get(ArrayList *arrayList, int index, int *result) {
+    if (arrayList -> length == 0 || index < 0 || index > arrayList -> length - 1) {
         return ERROR;
     }
     
-    *result = arrayList.data[index];
+    *result = arrayList -> data[index];
     return OK;
 }
 
@@ -52,6 +57,12 @@ int main(int argc, char const *argv[])
     add(list, 0, 6);
 
     display(list -> data, list -> length);
+
+    int result;
+    get(list, 0, &result);
+
+    printf("result : %d \n", result);
+
     return 0;
 }
 
