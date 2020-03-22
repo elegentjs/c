@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 
     for (int index = 0; index < LENGTH; index ++) {
         printf("a[%d]: ", index);
-        scanf("%d", &a[index]);
+        scanf("%d", a + index);
     }
     
     puts("before reverse : ");

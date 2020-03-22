@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 
     puts("请输入5个整型数组元素：");
     for (int index = 0; index < 5; index ++) {
-        scanf("%d\n", &array[index]);
+        scanf("%d\n", array + index);
     }
 
     display(array, 5);
