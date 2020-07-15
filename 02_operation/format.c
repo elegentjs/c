@@ -34,18 +34,18 @@ int main(int argc, char const *argv[])
 
 
     //展示各种格式化
-    printf("[%d] \n", 123);
-    printf("[%.4d] \n", 123);
-    printf("[%4d] \n", 123);
-    printf("[%04d] \n", 123);
-    printf("[%-4d] \n", 123);
+    printf("[%%d]: [%d] \n", 123);
+    printf("[%%.4d]: [%.4d] \n", 123);
+    printf("[%%4d]: [%4d] \n", 123);
+    printf("[%%04d]: [%04d] \n", 123);
+    printf("[%%-4d]: [%-4d] \n", 123);
 
     printf("\n");
 
-    printf("[%f] \n", 123.13);
-    printf("[%.1f] \n", 123.13);
-    printf("[%6.1f] \n", 123.13);
-    printf("[%06.1f] \n", 123.13);
+    printf("[%%f]: [%f] \n", 123.13);
+    printf("[%%.1f]: [%.1f] \n", 123.13);
+    printf("[%%6.1f]: [%6.1f] \n", 123.13);
+    printf("[%%06.1f]: [%06.1f] \n", 123.13);
 
 
     return 0;
