@@ -1,4 +1,4 @@
-# include "head.h"
+#include "head.h"
 
 /**
  * bubbleSort
@@ -18,12 +18,17 @@ void swap(int array[], int i, int j) {
 
 
 void bubbleSort(int array[], int length) {
-
     for (int index = 1; index < length; index ++) {
-        for (int i = index; i < length; i ++) {
+        int finished = 1;
+        for (int i = 1; i < length - index + 1; i ++) {
             if (array[i - 1] > array[i]) {
                 swap(array, i - 1, i);
+                finished = 0;
             }
+        }
+
+        if (finished == 1) {
+            break;
         }
     }
 
@@ -31,8 +36,8 @@ void bubbleSort(int array[], int length) {
 
 
 int main(int argc, char const *argv[]) {
-    int array[] = {4, 5, 3, 1, 19, 59, 43, 23, 10, 0, -1};
-    int length = sizeof(array) / sizeof(int);
+    int length = 30000;
+    int *array = randArray(length);
 
     printf("total length : %d \n", length);
     puts("before sort: ");
@@ -40,8 +45,14 @@ int main(int argc, char const *argv[]) {
     display(array, length);
 
     puts("after sort: ");
+
+    double start = clock();
     bubbleSort(array, length);
+    double end = clock();
+
     display(array, length);
+
+    printf("execute time: %f s \n", (end - start) / CLOCKS_PER_SEC);
 
     return 0;
 }

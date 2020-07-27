@@ -1,6 +1,7 @@
 /* 公共header */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define ERROR 0
 #define OK 1
@@ -24,6 +25,18 @@ void display(int array[], int length) {
     }   
 
     puts("");
+}
+
+
+int *randArray(int length) {
+    int *array = (int*)malloc(length);
+
+    for(int index = 0; index < length; index ++) {
+        int num = rand() % 1000 + 1;
+        array[index] = num;
+    }
+
+    return array;
 }
 
 
