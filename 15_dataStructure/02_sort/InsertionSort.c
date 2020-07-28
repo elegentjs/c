@@ -1,35 +1,32 @@
 #include "head.h"
 
 /**
- * bubbleSort
- * 冒泡排序是最入门的排序算法
+ * InsertionSort
+ * 直接插入排序也是基本的排序算法
  *  核心思路：
- *      每轮两两比较，如果前比后小则两两交换，公比较n - 1轮。 
+ *      渐进式完善排序，即从第二个元素开始往前比较元素放到合适的位置，直到所有都排序完成
  * 时间复杂度：最大：O(n * n); 平均：O(n * n); 最小：O(n)
  * 空间复杂度：O(1)
  * 是否稳定排序：是
  */
 
-void swap(int array[], int i, int j) {
-    int temp = *(array + j);
-    *(array + j) = *(array + i);
-    *(array + i) = temp;
-}
-
-
-void bubbleSort(int array[], int length) {
+/**
+ * 直接插入排序
+ */
+void insertionSort(int array[], int length) {
     for (int index = 1; index < length; index ++) {
-        int finished = 1;
-        for (int i = 1; i < length - index + 1; i ++) {
-            if (array[i - 1] > array[i]) {
-                swap(array, i - 1, i);
-                finished = 0;
+        int val = array[index];
+        int i = index - 1;
+        // 移动元素
+        for (; i >= 0; i --) {
+            if (array[i] > val) {
+                array[i + 1] = array[i];
+            } else {
+                break;
             }
         }
 
-        if (finished == 1) {
-            break;
-        }
+        array[i + 1] = val;
     }
 
 }
@@ -47,7 +44,7 @@ int main(int argc, char const *argv[]) {
     puts("after sort: ");
 
     double start = clock();
-    bubbleSort(array, length);
+    insertionSort(array, length);
     double end = clock();
 
     display(array, length);
