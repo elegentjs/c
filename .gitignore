@@ -62,3 +62,7 @@ dkms.conf
 # 编译中间结果（obj 文件）
 .o
 
+target/
+*.iml
+.idea/
+
