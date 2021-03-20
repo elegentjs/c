@@ -19,12 +19,27 @@
  * 
  */
 
+/**
+ * 计算非0的比特位的个数
+ * @param x 整数
+ * @return
+ */
 int countBits(unsigned int x);
+
+/**
+ * 计算int型所占的位数（随机器而变，一般为32位，也可能是16位）
+ * @return
+ */
 int intBits();
+
+/**
+ * 打印整型二进制格式
+ * @param x
+ */
 void printBits(unsigned int x);
 
-int main(int argc, char const *argv[])
-{
+
+int main(int argc, char const *argv[]) {
     puts("请输入一个非负整数：");
     
     int no;

@@ -1,6 +1,7 @@
 /* include start */
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 /* include end */
 
 /* define start */
@@ -69,18 +70,16 @@ int bitCounts(unsigned int i) {
     
 }
 
-char* binaryStr(unsigned int num) {
+char *binaryStr(unsigned int num) {
     int intBits = bitCounts(~0U);
 
-    char* result; 
+    char result[100];
 
+    int offset = 0;
     for (int index = intBits - 1; index >= 0; index --) {
-        *(result + 1) = (num >> index & 1U ? '1' : '0');
+        *(result + offset ++) = (num >> index & 1U ? '1' : '0');
     }
 
-    *(result + 1) = '\0';
-
-    printf("result : %s \n", result);
 
     return result;
 }

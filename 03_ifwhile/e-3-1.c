@@ -10,6 +10,8 @@
  * 
  *      如果表达式计算结果为0表示false
  *      非0就表示true
+ *
+ *      C语言中的统一标准：0为false, 非0表示true
  */
 int main(int argc, char const *argv[])
 {

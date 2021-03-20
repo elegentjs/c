@@ -8,7 +8,7 @@
  */
 int main(int argc, char const *argv[])
 {
-    for (float index = 0.0; index <= 1.0; index += 0.01) {
+    for (float index = 0.0F; index <= 1.0F; index += 0.01F) {
         printf("index = %f \n", index);
     }
 

@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * 打印整型数值的二进制格式
+ * @param i
+ */
+void printBits(unsigned int i);
+
 int main() {
     puts("请输入一个整数，我将执行移位计算：");
 
@@ -14,6 +20,9 @@ int main() {
 
     printf("待移位数字：");
     scanf("%d", &num);
+
+    printf("当前数字的二进制格式：");
+    printBits(num);
 
     printf("移位方向：(1: 左；2: 右)");
     scanf("%d", &direction);
@@ -30,4 +39,14 @@ int main() {
     }
 
     printf("移位结果： %d \n", result);
+    printf("当前数字的二进制格式：");
+    printBits(result);
+}
+
+void printBits(unsigned int a) {
+    for (int i = 31; i >= 0; i --) {
+        putchar(a >> i & 1U ? '1' : '0');
+    }
+
+    puts("");
 }

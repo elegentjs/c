@@ -6,7 +6,7 @@
  *  也可以像下方的函数调用一样，先两两比较，再把比较的结果传给函数得出最大的
  */
 
-int max(int, int);
+int max(int i, int j);
 
 int main(int argc, char const *argv[])
 {
